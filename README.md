@@ -12,7 +12,7 @@
 > ```
 
 > [!TIP]
-> This is an example!
+> This is an example! [link](/example.py)
 > ```python
 > from gitparse import Git
 > 
