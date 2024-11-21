@@ -1,4 +1,5 @@
 <h1 align="center">Gitparse 😎</h1>
+
 > [!NOTE]
 > This is a python library for parsing github files!
 <!-- <h2 align="left">Download libraries</p> -->
