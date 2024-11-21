@@ -11,7 +11,7 @@
 > pip install lxml requests bs4
 > ```
 
-> [!NOTE]
+> [!TIP]
 > This is an example!
 > ```python
 > from gitparse import Git
