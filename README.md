@@ -11,10 +11,12 @@
 > ```bash
 > pip install lxml requests bs4
 > ```
+
 <br>
 
 > [!WARNING]
 > I don't test it with .exe files. Be careful!
+
 <br>
 
 > [!TIP]
@@ -36,6 +38,7 @@
 >     parsed_file.write(text)
 > ```
 
+<br>
 
 > [!TIP]
 > Parsing proxies with Gitparse! | [link](/getProxies.py)
