@@ -1,5 +1,6 @@
 <h1 align="center">Gitparse 😎</h1>
-> A python library for parsing github files!
+> [!NOTE]
+> This is a python library for parsing github files!
 <!-- <h2 align="left">Download libraries</p> -->
 
 
@@ -9,14 +10,7 @@
 > pip install lxml requests bs4
 > ```
 
-
-<!-- <h1 align="center">Example</h1> -->
-
 > [!NOTE]
-> This is a simple example of how to use the Gitparse library.
-
-
-> [!TIP]
 > This is an example!
 > ```python
 > from gitparse import Git
@@ -34,8 +28,3 @@
 > with open(path, 'w') as parsed_file:
 >     parsed_file.write(text)
 > ```
-
-
-
-> [!NOTE]
-> This is a python library for parsing github files!
