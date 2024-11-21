@@ -11,6 +11,9 @@
 > pip install lxml requests bs4
 > ```
 
+> [!WARNING]
+> I don't test it with .exe files. Be careful!
+
 > [!TIP]
 > This is an example! | [link](/example.py)
 > ```python
