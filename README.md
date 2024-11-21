@@ -3,15 +3,17 @@
 
 > [!NOTE]
 > Maybe i will add proxy parsing in lib
-
+<br>
 > [!IMPORTANT]
 > Download the required libraries
 > ```bash
 > pip install lxml requests bs4
 > ```
+<br>
 
 > [!WARNING]
 > I don't test it with .exe files. Be careful!
+<br>
 
 > [!TIP]
 > This is an example! | [link](/example.py)
