@@ -16,9 +16,8 @@ proxies = {
     'https': https,
 }
 
-#checking
-for proxy in:
-    get('https://google.com', proxies=proxies)
+#check
+get('https://google.com', proxies=proxies)
 
 # Return proxies
 print(f'''
