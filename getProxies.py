@@ -1,23 +1,24 @@
 from gitparse import Git, get
 
 # Path to file
-http_path = 'proxies/protocols/https/data.txt'
-https_path = 'proxies/protocols/https/data.txt'
+http_path = 'proxies/protocols/http/data.txt'
+# https_path = 'proxies/protocols/https/data.txt'
 
 # Initializing Git class
 git = Git('proxifly', 'free-proxy-list')
 
 # Getting the content of the file
 http = git.parse(http_path)
-https = git.parse(https_path)
+# https = git.parse(https_path)
 
 proxies = {
     'http': http,
-    'https': https,
+    # 'https': https,
 }
 
 #check
-get('https://google.com', proxies=proxies)
+resp = get('https://google.com', proxies=proxies)
+print(resp.status_code)
 
 # Return proxies
 print(f'''
@@ -27,9 +28,6 @@ Proxies:
 
 HTTP:
 {http}
-------------------
-HTTPS:
-{https}
 ''')
 
 # # Creating file with downloaded content
