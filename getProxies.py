@@ -13,7 +13,8 @@ print(f'''
 All free proxies from https://github.com/proxifly/free-proxy-list/blob/main/proxies/protocols/https/data.txt
       
 Proxies:
-    {text}
+
+{text}
 ''')
 
 # # Creating file with downloaded content
