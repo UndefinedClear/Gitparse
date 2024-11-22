@@ -47,5 +47,5 @@
 <br>
 
 > [!TIP]
-> Parsing proxies with Gitparse! | [link](/getProxies.py)
+> Parsing proxies with Gitparse! | [link](/getProxies.py) <br>
 > Support authors of free proxies: [Proxies from here](https://github.com/proxifly/free-proxy-list)
