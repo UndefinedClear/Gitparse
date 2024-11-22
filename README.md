@@ -7,13 +7,13 @@
 <br>
 
 > [!IMPORTANT]
-> Download the required libraries
+> Download the required libraries (Windows)
 > ```bash
 > pip install lxml requests bs4
 > ```
 
 > [!IMPORTANT]
-> For download required libs on termux run
+> For download required libs on termux run (Termux)
 > ```bash
 > bash termux.sh
 > ```
