@@ -7,6 +7,36 @@ class Git():
     def __init__(self, git_repo_author:str, git_repo_name:str):
         self.main_raw = f'https://raw.githubusercontent.com/{git_repo_author}/{git_repo_name}/refs/heads/main/'
 
+    def getProxies(self, protocol:str = 'http'):
+
+        """Return the proxy dict for requests
+
+        :param protocol:
+          - Protocol for dict of proxies, http or https
+        """
+
+        original = self.main_raw
+
+        self.main_raw = f'https://raw.githubusercontent.com/proxify/free-proxy-list/refs/heads/main/'
+
+
+        if protocol == 'http':
+              # Path to file
+              http_path = 'proxies/protocols/http/data.txt'
+              #https_path = 'proxies/protocols/https/data.txt'
+
+              # Getting the content of the file
+              http = self.parse(http_path)
+              #https = git.parse(https_path)
+
+              proxies = {
+                  'http': http
+              }
+
+              self.main_raw = original
+
+              return proxies
+
     def parse(self, path:str) -> str:
         """Return the content of the file
 
