@@ -12,6 +12,18 @@
 > pip install lxml requests bs4
 > ```
 
+> [!IMPORTANT]
+> Download the required libraries on termux
+> ```bash
+1. > pip install requests bs4
+>
+> 
+2. > apt update && apt upgrade
+> pkg install python libxml2 libxslt pkg-config
+> pip install cython wheel
+> CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install lxml
+> ```
+
 <br>
 
 > [!WARNING]
