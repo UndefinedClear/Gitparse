@@ -7,7 +7,7 @@ class Git():
     def __init__(self, git_repo_author:str, git_repo_name:str):
         self.main_raw = f'https://raw.githubusercontent.com/{git_repo_author}/{git_repo_name}/refs/heads/main/'
 
-    def getProxies(self, protocol:str = 'http')
+    def getProxies(self, protocol:str = 'http'):
 
         """Return the proxy dict for requests
 
