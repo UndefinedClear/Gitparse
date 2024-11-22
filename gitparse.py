@@ -15,6 +15,11 @@ class Git():
           - Protocol for dict of proxies, http or https
         """
 
+        original = self.main_raw
+
+        self.main_raw = f'https://raw.githubusercontent.com/proxify/free-proxy-list/refs/heads/main/'
+
+
         if protocol == 'http':
               # Path to file
               http_path = 'proxies/protocols/http/data.txt'
@@ -27,6 +32,8 @@ class Git():
               proxies = {
                   'http': http
               }
+
+              self.main_raw = original
 
               return proxies
 
