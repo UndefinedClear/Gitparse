@@ -11,8 +11,7 @@
 > ```bash
 > pip install lxml requests bs4
 > ```
-
-> [!IMPORTANT]
+>
 > For download required libs on termux run (Termux)
 > ```bash
 > bash termux.sh
