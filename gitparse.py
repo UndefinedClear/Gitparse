@@ -101,6 +101,7 @@ def testProxy(proxies, proxies_end_final):
         print(f"Exception: {e}")
         #Handle proxy failure (could try another proxy here)
 
+
 def getProxy(protocol: str = 'http', test_proxy:bool = False):
     """Return the proxy dict for requests (with one random proxy)
 
@@ -121,23 +122,47 @@ def getProxy(protocol: str = 'http', test_proxy:bool = False):
     git = Git('proxifly', 'free-proxy-list')
 
     # Getting the content of the file
-    http = git.parse(proxy_path)
-    proxies_http = http.split('\n')
-
-    proxies_end: list[str] = []
-
-    for proxy in proxies_http:
-        proxies_end.append(proxy)
-
-    proxies_end_final: str = proxies_end[randint(0, len(proxies_end) - 1)]
-
-    # Dictionary for the library "requests"
-    proxies = {
-        f'{protocol}': proxies_end_final
-    }
-    
-    if test_proxy:
-        testProxy(proxies, proxies_end_final)
-
-    # Return dictionary for the library "requests"
+    proxies = git.parse(proxy_path)
     return proxies
+
+
+# def getProxy(protocol: str = 'http', test_proxy:bool = False):
+#     """Return the proxy dict for requests (with one random proxy)
+
+#     # Protocols:
+#     * http
+#     * https
+#     * socks4
+#     * socks5
+
+#     :param protocol:
+#       - Protocol for dict of proxies, http or https
+#     """
+
+#     # Path to file
+#     proxy_path = f'proxies/protocols/{protocol}/data.txt'
+
+#     # Initializing Git class
+#     git = Git('proxifly', 'free-proxy-list')
+
+#     # Getting the content of the file
+#     http = git.parse(proxy_path)
+#     proxies_http = http.split('\n')
+
+#     proxies_end: list[str] = []
+
+#     for proxy in proxies_http:
+#         proxies_end.append(proxy)
+
+#     proxies_end_final: str = proxies_end[randint(0, len(proxies_end) - 1)]
+
+#     # Dictionary for the library "requests"
+#     proxies = {
+#         f'{protocol}': proxies_end_final
+#     }
+    
+#     if test_proxy:
+#         testProxy(proxies, proxies_end_final)
+
+#     # Return dictionary for the library "requests"
+#     return proxies
